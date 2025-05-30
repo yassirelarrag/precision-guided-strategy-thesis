@@ -3,37 +3,43 @@
 This repository contains the full codebase, prediction files, and processed data used in the thesis.
 
 ## 📂 Repository Structure
-├── Data/
+This repository contains all code, data, and supporting files used for the thesis. Below is a description of the key contents:
 
-│ ├── historical_data_AAPL.csv
+Data/
+Contains the historical stock and index data used in the study:
 
-│ ├── historical_data_BA.csv
-│ └── historical_data_^GSPC.csv (S&P 500)
+historical_data_AAPL.csv: Historical data for Apple Inc. (AAPL)
 
-├── env
+historical_data_BA.csv: Historical data for Boeing Co. (BA)
 
-├── model_prediction_AAPL.pkl
+historical_data_^GSPC.csv: Historical data for the S&P 500 index
 
-├── model_prediction_BA.pkl
+env/
+The virtual environment directory (not tracked in Git). Can be recreated using requirements.txt.
 
-├── selected_features_AAPL.pkl
+model_prediction_AAPL.pkl
+Precomputed model predictions for AAPL stock.
 
-├── selected_features_BA.pkl
+model_prediction_BA.pkl
+Precomputed model predictions for BA stock.
 
-├── analysis.ipynb
+selected_features_AAPL.pkl
+Selected features used for training the AAPL model.
 
-├── engineering.py
+selected_features_BA.pkl
+Selected features used for training the BA model.
 
-├── README.md
+analysis.ipynb
+Main Jupyter notebook containing all code for data engineering, model training, threshold tuning, and simulation.
 
-├── requirements.txt
+engineering.py
+Python script containing functions for data processing and technical indicator computation.
 
-├── Plots/
+Plots/
+Folder with visual outputs of the simulations and analysis:
 
-│ ├── capital_evolution
+requirements.txt
+A list of required Python packages to recreate the environment.
 
-│ ├── precision thresholds
-
-│ └── ...
-
-└─
+README.md
+Documentation explaining the purpose of the project and how to use it.
