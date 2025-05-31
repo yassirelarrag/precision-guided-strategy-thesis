@@ -1,4 +1,4 @@
-# 📈 Stock Movement Prediction Using Random Forests – Thesis Codebase
+# 📈 Precision-Guided Investment Approach – Thesis Codebase
 
 This repository contains the full codebase, prediction files, and processed data used in the thesis.
 
