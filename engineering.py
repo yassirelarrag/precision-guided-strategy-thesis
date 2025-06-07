@@ -72,8 +72,7 @@ def moving_averages(data, window):
 def chnage_to_benchmark(data, window, benchmark:str):
     data_start_date = datetime.datetime(2000, 1, 1)
     data_end_date = datetime.datetime(2025, 2, 28)
-    benchmark_data = get_ticker_data(benchmark, start=data_start_date, end=data_end_date)
-
+    benchmark_data = pd.read_csv("data\^GSPC.csv")
     benchmark_price_chnages = benchmark_data["Close"] - benchmark_data["Close"].shift(window)
     price_changes = data["Close"] - data["Close"].shift(window)
 
